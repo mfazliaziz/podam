@@ -1,4 +1,4 @@
 test:
   post:
     - mkdir -p $CIRCLE_TEST_REPORTS/junit/
-    - find . -type f -regex ".*/target/podam-6.0.2-SNAPSHOT-sources.jar/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
+    - find . -type f -regex ".*/target/site/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
